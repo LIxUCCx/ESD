@@ -47,12 +47,13 @@ async def on_message(message):
         await client.send_message(message.channel, '-Electric State Database v1.2')
     if message.content == '?rfb':
         await client.send_message(message.channel, 'no anime you fricking weeb')
-    if message.content == '?coinflip':
-        randomlist = ['Heads', 'Tails']
-        await client.send_message(message.channel, (random.choice(randomlist)))
     if message.content == '?help':
         await client.send_message(message.channel, 'Commands: \nprefix: ?  \ninfofamas \ninfotommygun \ninfospywatch \ninfojetpack \ninfogarand \ninfoxm8 \ninforemington \ninfoballisticfist \nversion \nupdatelog \ncoinflip \ncredits')
     if message.content == '?updatelog':
         await client.send_message(message.channel, 'Update Log: \nAdded coin flip command and credits.')
+    if message.content == '?coinflip':
+        randomlist = ['Heads', 'Tails']
+        await client.send_message(message.channel, (random.choice(randomlist)))
+
 client.run('NTYwMTc2MTk3MzgwNzM0OTk3.D3yvdw.m-6xv6KZlL_LUgH7SFueIYC-_-A')
 client.run(os.getenv('TOKEN'))
