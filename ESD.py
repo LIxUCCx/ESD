@@ -16,7 +16,7 @@ Clientdiscord = discord.Client()
 async def on_member_join(member):
     print(member.name + ' joined the server!')
     await client.send_message(member, 'Hello, '  + member.name + ' and welcome to the unofficial Electric State Discord server, read the rules before chatting in general or any other channel this server has to offer. Have fun! (Bot Prefix: ?)')
-    bot.process_commands(message)
+    bot.process_commands(send_message)
     
 @client.event
 async def on_ready():
