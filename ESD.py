@@ -25,7 +25,6 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    await client.send_message(message)
     if message.content == '?infofamas':
         await client.send_message(message.channel, 'Famas has 26 bullets in one magazine, its accuracy is good, this gun deals 26 damage per hit (4 shot kill), Famas has the same fire rate as an M4 (fast), the price of this gun is around 13k-15k, the upgrade price is 4k but users charge around 6k, you will also need an M4 to craft it.')
     if message.content == '?infotommygun':
